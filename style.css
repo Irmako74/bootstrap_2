@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: rgba(34, 42, 54, 0.95);
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: #676CDB;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.banner_text{
+    font-family: 'Playfair Display';
+    color: rgb(255, 255, 255);
+}
+
+.col-1{
+  
+    position: relative;
+    margin-right: 100px;
+}
+
+.col-1 h1{
+    font-size: 54px;
+    font-family: 'Playfair Display';
+}
+
+.col-1 p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Poppins';
+}
+
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #ffffff;
+    background: #676CDB;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn_contact{
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 152px;
+    height: 50px;
+    background: #676CDB;
+    color: white;
+    font-weight: 600;
+}
+
+.btn_contact:hover{
+    padding: 10px 20px;
+    width: 152px;
+    height: 50px;
+    background: white;
+    color: #676CDB;
+    font-weight: 600;
+}
+
+.download_cv{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-decoration-line: none;
+    color: #FFFFFF;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .controller{
+    width: 485px ;
+    height: 500px;
+    padding-top: -40px;
+    padding-bottom: 140px;
+}
+
+.banner{
+    background-image: url("../src/Rectangle\ 3.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgba(34, 42, 54, 0.95), #222446);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+         color: #fff
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    #menuList{
+        overflow:hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: -70px;
+    }
+    .col-1{
+    flex-basis: 100%;
+    }
+    .col-1 h1{
+        font-size: 48px;
+    }
+
+}
+
